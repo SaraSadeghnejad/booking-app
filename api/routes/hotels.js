@@ -9,10 +9,8 @@ route.post('/',verifyAdmin, createHotel)
 route.put("/:id", verifyAdmin, updateHotel);
 //delete a route
 route.delete("/:id", verifyAdmin, deleteHotel);
-route.get("/:id",getHotel );
+route.get("/find/:id",getHotel );
 route.get("/", getHotels);
-
-
 route.get("/countByCity", countByCity);
 route.get("/countByType", countByType);
 export default route;
